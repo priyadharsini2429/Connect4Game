@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 1rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border: 2px solid black;
+  width: 630px;
+  background-color: rgb(74, 74, 198);
+}
+
+ul {
+  display: grid;
+  place-items: center;
+}
+
+ul li {
+  list-style: none;
+  margin: 5px;
+  width: 75px;
+  height: 75px;
+  border: 2px solid black;
+  border-radius: 100px;
+  background-color: white;
+}
+
+h2.red {
+  color: red;
+  background-color: black;
+}
+
+h2.yellow {
+  color: yellow;
+  background-color: black;
+}
+
+li.red {
+  background-color: red;
+}
+
+li.yellow {
+  background-color: yellow;
+}
+
+ul:hover {
+  cursor: pointer;
+  background-color: rgb(98, 136, 238);
+}
+
+.resetButton {
+  background-color: rgb(74, 74, 198);
+  border: rgb(74, 74, 198);
+  color: white;
+  padding: 1rem;
+  font-size: 16px;
+  margin: 1rem auto;
+  cursor: pointer;
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .board {
+    width: 500px;
+  }
+  ul li {
+    width: 55px;
+    height: 55px;
+  }
+}
+@media (max-width: 520px) {
+  .board {
+    width: 400px;
+  }
+  ul li {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 420px) {
+  .board {
+    width: 320px;
+  }
+  ul li {
+    width: 30px;
+    height: 30px;
+  }
+}
